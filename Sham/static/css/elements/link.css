@@ -1,0 +1,40 @@
+.link {
+  font: inherit;
+
+  padding: 0;
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: .1s;
+  transition-property: border-color, color, box-shadow;
+  text-decoration: none;
+  color: var(--action-element-color);
+
+  border: none;
+  border-bottom: 1px solid transparent;
+
+  background-color: transparent;
+}
+
+.link:focus {
+  color: var(--action-element-color);
+
+  border-color: transparent;
+  outline: none;
+
+  box-shadow: 0 0 0 3px rgba(0, 97, 217, .54);
+}
+
+.link:hover,
+.link:active {
+  color: var(--action-text-color);
+
+  border-bottom: 1px solid var(--action-element-color);
+
+  box-shadow: none;
+}
+
+.link-disabled {
+  text-decoration: none;
+  pointer-events: none;
+  color: var(--border-color);
+}

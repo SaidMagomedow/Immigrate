@@ -1,0 +1,17 @@
+.cert-card {
+  max-width: 480px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.cert-card--success {
+  background: rgba(67, 160, 71, 0.05);
+  border-color: var(--success-color);
+}
+
+.cert-card--danger {
+  background: rgba(229, 46, 46, 0.1);
+  border-color: var(--error-color);
+}

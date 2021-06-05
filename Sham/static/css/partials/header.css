@@ -1,0 +1,54 @@
+.header {
+  display: grid;
+  align-items: center;
+  flex-shrink: 0;
+
+  min-height: 80px;
+
+  border-bottom: 1px solid var(--border-color);
+
+  background-color: var(--main-white);
+  grid-gap: 32px;
+  grid-template-columns: auto auto;
+}
+
+.user-account__dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+[data-dropdown-trigger] {
+  cursor: pointer;
+}
+
+.header__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding: 16px 0 16px 24px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+.notify-icon {
+  position: relative;
+}
+
+.notify-icon--new::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: var(--action-element-color);
+}

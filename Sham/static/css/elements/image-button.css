@@ -1,0 +1,97 @@
+.image-button {
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+
+  padding: 0;
+  cursor: pointer;
+
+  border: none;
+
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.image-button:focus {
+  outline: none;
+}
+
+.image-button svg {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.image-button svg + span {
+  margin-left: 8px;
+}
+
+.image-button span + svg {
+  margin-left: 8px;
+}
+
+.image-button--primary {
+  color: var(--action-element-color);
+}
+
+.image-button--primary svg {
+  fill: var(--action-element-color);
+}
+
+.image-button--secondary {
+  color: var(--border-color);
+}
+
+.image-button--secondary svg {
+  fill: var(--border-color);
+}
+
+.image-button--danger {
+  color: var(--error-text-color);
+}
+
+.image-button--danger svg {
+  fill: var(--error-color);
+}
+
+.image-button--outline {
+  border: 1px solid var(--action-element-color);
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.image-button--block {
+  display: block;
+}
+
+.image-button--sm {
+  font-size: .875rem;
+}
+
+.image-button--sm svg {
+  width: 16px;
+  height: 16px;
+}
+
+.image-button--muted {
+  color: var(--hint-color);
+}
+
+.image-button--muted svg {
+  fill: var(--hint-color);
+}
+
+.image-button:disabled {
+  cursor: default;
+  color: var(--border-color);
+}
+
+.image-button:disabled svg {
+  fill: var(--border-color);
+}

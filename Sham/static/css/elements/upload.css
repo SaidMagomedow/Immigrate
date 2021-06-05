@@ -1,0 +1,47 @@
+[type='file'] {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+
+  opacity: 0;
+}
+
+[type='file']:focus + label,
+[type='file'].focus + label {
+  box-shadow: 0 0 0 3px rgba(0, 97, 217, .5);
+}
+
+[type='file'] + label * {
+  pointer-events: none;
+}
+
+.upload {
+  position: relative;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 8px;
+  padding: 28px;
+  color: var(--hint-color);
+
+  border: 1px solid var(--border-color);
+
+  background-color: transparent;
+}
+
+.upload__button {
+  flex-shrink: 0;
+
+  margin-right: 28px;
+
+  background-color: transparent;
+}
+
+.upload__caption {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

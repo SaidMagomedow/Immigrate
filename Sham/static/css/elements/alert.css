@@ -1,0 +1,19 @@
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: var(--main-white);
+}
+
+.alert + .alert {
+  margin-top: 1rem;
+}
+
+.alert--warning {
+  background-color: var(--warning-color);
+}
+
+.alert--primary {
+  background-color: var(--action-element-color);
+}

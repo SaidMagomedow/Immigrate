@@ -1,0 +1,36 @@
+.autocomplete {
+  font-size: 1em;
+
+  position: absolute;
+  z-index: 10;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  width: 100%;
+  max-height: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all .1s ease-in-out;
+
+  border: 1px solid #d3d3d3;
+
+  background-color: var(--main-white);
+}
+
+.autocomplete--lg {
+  max-height: 400px;
+}
+
+.autocomplete li {
+  position: relative;
+
+  padding: 8px 1em 8px .4em;
+  transition: .25s all;
+}
+
+.autocomplete li:hover {
+  cursor: pointer;
+
+  background-color: var(--light-divider-color);
+}

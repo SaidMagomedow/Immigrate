@@ -1,0 +1,209 @@
+body,
+html {
+  color: #333;
+  background: #fff;
+}
+
+body {
+  font: 12px Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.caption {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 0 30px;
+  padding: 5px 0;
+  text-align: center;
+  color: #333;
+}
+
+.caption__danger {
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  padding: 15px 0 55px;
+  text-align: center;
+  color: #333;
+}
+
+.button__text {
+  position: relative;
+  padding: 0 15px;
+  pointer-events: none;
+}
+
+.button {
+  font-size: 13px;
+  line-height: 28px;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  color: #000;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: 0 0;
+  border: 1px solid #ccc;
+}
+
+.button:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  content: '';
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.button:active,
+.button:hover,
+.button:link,
+.button:visited {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.button:active:before,
+.button:hover:before {
+  border: 1px solid rgba(0, 0, 0, .3)
+}
+
+a:link,
+a:visited {
+  text-decoration: none !important;
+  color: #0054a6 !important;
+}
+
+.container {
+  position: relative;
+  width: 760px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 20px #a0a0a0;
+  box-shadow: 0 4px 20px #a0a0a0;
+}
+
+.browser__icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  border: none;
+  outline: 0;
+  background: url(../img/icons/browsers.png) no-repeat;
+  background-size: auto 100%;
+}
+
+.browser__icon_type_chrome {
+  background-position: 0 0;
+}
+
+.browser__icon_type_fx {
+  background-position: -76px 0;
+}
+
+.browser__icon_type_edge {
+  background-position: -152px 0;
+}
+
+.browser__icon_type_yabro {
+  background-position: -230px 0;
+}
+
+.browser__icon_type_opera {
+  background-position: -306px 0;
+}
+
+.browser__name {
+  font-size: 15px;
+  display: block;
+  padding: 12px 0 15px;
+  color: #04b;
+}
+
+.browser {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.browsers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 40;
+  line-height: 22px;
+  margin: 0;
+  padding: 24px 0 0 0;
+  color: #333;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.advantages-container {
+  position: relative;
+  width: 820px;
+  margin: 40px auto;
+  background-color: #fff;
+}
+
+.advantages-title {
+  margin-top: 1.8em;
+  text-align: center;
+  font-size: 28px;
+  border-bottom: 1px solid #aaa;
+}
+
+.advantages-list {
+  font-size: 13px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantage-item {
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #777;
+  display: inline-block;
+  width: 35%;
+  text-align: center;
+  vertical-align: top;
+  background-size: 32px;
+  padding: 16px 7% 16px;
+}

@@ -1,0 +1,43 @@
+.text-primary {
+  color: var(--action-element-color);
+}
+
+.text-secondary {
+  color: var(--border-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+.text-danger {
+  color: var(--error-text-color);
+}
+
+.text-success {
+  color: var(--success-text-color);
+}
+
+.text-black {
+  color: var(--main-title-color);
+}
+
+.text-dark {
+  color: var(--main-text-color);
+}
+
+.text-muted {
+  color: var(--hint-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

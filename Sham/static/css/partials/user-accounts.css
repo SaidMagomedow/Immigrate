@@ -1,0 +1,50 @@
+.user-account {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-account__item {
+  position: relative;
+
+  max-width: 280px;
+  padding: 16px;
+  white-space: nowrap;
+
+  background-color: var(--main-white);
+}
+
+.user-account__item:not(:last-child)::before {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  bottom: 16px;
+
+  width: 1px;
+  content: '';
+
+  background-color: var(--divider-color);
+}
+
+.user-account__title,
+.user-account__caption {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.user-account__title {
+  color: var(--main-title-color);
+}
+
+.user-account__caption {
+  margin-top: 4px;
+  font-size: .75rem;
+  line-height: 1.5;
+
+  color: var(--hint-color);
+}

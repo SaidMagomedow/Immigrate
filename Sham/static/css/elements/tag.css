@@ -1,0 +1,28 @@
+.tag {
+  font-size: .75rem;
+  line-height: 1.5;
+  align-items: center;
+  border-radius: .334em;
+  display: inline-flex;
+  justify-content: center;
+  color: var(--main-white);
+  padding: .5em 1em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.tag--danger {
+  background-color: var(--error-color);
+}
+
+.tag--primary {
+  background-color: var(--action-element-color);
+}
+
+.tag--success {
+  background-color: var(--success-color);
+}
+
+.tag--warning {
+  background-color: var(--warning-color);
+}

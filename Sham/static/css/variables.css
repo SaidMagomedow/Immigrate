@@ -1,0 +1,18 @@
+:root {
+  --main-title-color: #000;
+  --main-text-color: #333333;
+  --hint-color: #76767a;
+  --border-color: #a7a8ab;
+  --divider-color: #d9d9de;
+  --light-divider-color: #e5e5eb;
+  --light-fill: #f5f5f7;
+  --main-white: #fff;
+  --action-text-color: #0050b2;
+  --action-element-color: #0061d9;
+  --error-text-color: #d51a1a;
+  --error-color: #e52e2e;
+  --light-red-fill: rgba(229, 46, 46, .1);
+  --warning-color: #ff9500;
+  --success-text-color: #348c38;
+  --success-color: #43a047;
+}

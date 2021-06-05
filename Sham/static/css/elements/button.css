@@ -1,0 +1,230 @@
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: inline-block;
+
+  padding: 9px 20px;
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-duration: .25s;
+  transition-property: background-color, border-color, box-shadow;
+  text-decoration: none;
+
+  border-radius: 4px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.button--primary {
+  color: var(--main-white);
+
+  border: 1px solid var(--action-element-color);
+
+  background-color: var(--action-element-color);
+}
+
+.button--primary:hover {
+  border-color: #0055bf;
+  outline: none;
+
+  background-color: #0055bf;
+}
+
+.button--primary:focus {
+  border-color: var(--action-element-color);
+  outline: none;
+
+  background-color: var(--action-element-color);
+  box-shadow: 0 0 0 3px rgba(0, 97, 217, .5);
+}
+
+.button--primary:active {
+  border-color: #004aa6;
+
+  background-color: #004aa6;
+  box-shadow: none;
+}
+
+.button--primary:disabled {
+  cursor: default;
+
+  border-color: var(--border-color);
+
+  background-color: var(--border-color);
+}
+
+.button--secondary {
+  color: var(--action-text-color);
+
+  border: 1px solid var(--action-element-color);
+
+  background-color: transparent;
+}
+
+.button--secondary:hover {
+  outline: none;
+
+  background-color: #e6f0fc;
+}
+
+.button--secondary:focus {
+  border-color: var(--action-element-color);
+  outline: none;
+
+  background-color: transparent;
+  box-shadow: 0 0 0 3px rgba(0, 97, 217, .5);
+}
+
+.button--secondary:active {
+  background-color: #ccdcf0;
+  box-shadow: none;
+}
+
+.button--secondary:disabled {
+  cursor: default;
+  color: var(--border-color);
+
+  border-color: var(--border-color);
+
+  background-color: var(--light-fill);
+}
+
+.button--outline-danger {
+  color: var(--error-text-color);
+
+  border: 1px solid var(--error-color);
+
+  background-color: transparent;
+}
+
+.button--outline-danger:hover {
+  outline: none;
+
+  background-color: rgba(229, 46, 46, .06);
+}
+
+.button--outline-danger:focus {
+  border-color: var(--error-color);
+  outline: none;
+
+  background-color: transparent;
+  box-shadow: 0 0 0 3px rgba(229, 46, 46, .5);
+}
+
+.button--outline-danger:active {
+  background-color: rgba(229, 46, 46, .1);
+  box-shadow: none;
+}
+
+.button--link {
+  position: relative;
+  color: var(--action-text-color);
+
+  border: 1px solid transparent;
+
+  background-color: transparent;
+}
+
+.button--link::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  bottom: 8px;
+  right: calc(100% - 9px);
+  width: auto;
+  height: 1px;
+  background-color: var(--action-text-color);
+  transition: .25s right ease-in-out;
+}
+
+.button--link:hover::after {
+  right: 9px;
+}
+
+.button--link:focus {
+  outline: none;
+}
+
+.button--lg {
+  font-size: 18px;
+  line-height: 1.5555555555;
+
+  padding: 12px 32px;
+}
+
+.button--loader {
+  position: relative;
+  transition: all .3s;
+  transition-timing-function: ease-in;
+}
+
+.button__spin {
+  animation: ld-spin 1s infinite linear;
+  top: 50%;
+  left: auto;
+  right: 1.25em;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  margin: -0.5em;
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s;
+  transition-timing-function: ease-in;
+  color: inherit;
+  display: inline-block;
+  box-sizing: content-box;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.button__spin::after {
+  content: " ";
+  display: block;
+  width: 2em;
+  height: 2em;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  transform: translateZ(0) scale(0.5);
+  backface-visibility: hidden;
+  border-radius: 50%;
+  border: .3em solid currentColor;
+  border-left-color: transparent;
+}
+
+.button--loader-running {
+  padding-right: 2.5em;
+}
+
+.button--loader-running:disabled {
+  cursor: not-allowed;
+}
+
+.button--primary.button--loader-running:disabled {
+  border-color: var(--action-element-color);
+  background-color: var(--action-element-color);
+}
+
+.button--secondary.button--loader-running:disabled {
+  color: var(--action-text-color);
+  border: 1px solid var(--action-element-color);
+  background-color: transparent;
+}
+
+.button--loader-running .button__spin {
+  opacity: 1;
+  z-index: auto;
+  visibility: visible;
+}
+
+@keyframes ld-spin {
+  0% {
+    animation-timing-function: cubic-bezier(0.5856, 0.0703, 0.4143, 0.9297);
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
